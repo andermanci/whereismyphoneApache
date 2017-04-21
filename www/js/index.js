@@ -27,7 +27,8 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-        this.receivedEvent('deviceready');
+        sleep(2);
+        this.checkAuth();
     },
 
     // Update DOM on a Received Event
@@ -54,9 +55,5 @@ var app = {
 
 app.initialize();
 
-function init(){
-    app.checkAuth();
-
-}
 
 
