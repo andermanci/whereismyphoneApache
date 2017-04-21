@@ -1,0 +1,25 @@
+
+
+    <div data-role="view" data-title="Citizen Connected" data-layout="main" data-model="APP.models.login">
+        <div data-role="header">
+            <h1>Login</h1>
+        </div>
+
+        <div data-role="content">
+
+            <form id="loginForm" action="handleLogin()">
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" value="" placeholder="Username" />
+                </div>
+
+                <div data-role="fieldcontain" class="ui-hide-label">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" value="" placeholder="Password" />
+                </div>
+
+                <input type="submit" value="Login" id="submitButton">
+            </form>
+
+        </div>
+    </div>

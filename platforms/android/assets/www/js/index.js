@@ -40,7 +40,23 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+
+    checkAuth: function() {
+
+        if(window.localStorage["username"] != undefined && window.localStorage["password"] != undefined) {
+            window.location="main.html";
+        }else{
+            window.location="login.html";
+        }
     }
 };
 
 app.initialize();
+
+function init(){
+    app.checkAuth();
+
+}
+
+
