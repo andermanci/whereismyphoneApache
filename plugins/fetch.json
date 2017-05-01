@@ -1,0 +1,42 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-dialogs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-bb-crypto": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-bb-crypto"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-minisodium": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-minisodium"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-jdbc": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-jdbc@0.1.2"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
