@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="io.cordova.whereismyphone" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>WhereIsMyPhone</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
@@ -16,12 +16,25 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="https://whereismyphoneservices.herokuapp.com/*" />
+    <allow-navigation href="data:*" />
+    <access origin="http://google.com" />
+    <access origin="https://google.com" />
+    <access origin="http://maps.google.com" />
+    <access origin="http://*.google.com" />
+    <access origin="content:///*" />
+    <access origin="https://whereismyphoneservices.herokuapp.com" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <hook type="after_prepare" src="scripts/copyDriver.js" />
+        <hook src="scripts/copyDriver.js" type="after_prepare" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="android-targetSdkVersion" value="23" />
 </widget>

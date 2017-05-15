@@ -20,6 +20,7 @@ var app = {
     // Application Constructor
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+
     },
 
     // deviceready Event Handler
@@ -29,11 +30,21 @@ var app = {
     onDeviceReady: function() {
         this.checkAuth();
         this.receivedEvent('deviceready');
+
     },
     checkAuth: function() {
+        var storage = window.localStorage;
 
-        if(window.localStorage["username"] != undefined && window.localStorage["password"] != undefined) {
-            window.location="main.html";
+
+        if( storage.getItem("user") != undefined && storage.getItem("password") != undefined) {
+           if(storage.getItem("device_ID") != undefined){
+
+               window.location="main.html";
+           }
+           else{
+
+               window.location="syncronize.html";
+           }
         }else{
             window.location="login.html";
         }

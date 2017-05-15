@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "354026497758",
+    "firebase_url": "https://whereismyphone-2d1c3.firebaseio.com",
+    "project_id": "whereismyphone-2d1c3",
+    "storage_bucket": "whereismyphone-2d1c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354026497758:android:92a5ac2374a4eef1",
+        "android_client_info": {
+          "package_name": "io.cordova.whereismyphone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354026497758-1phrjvkdrqql4clltsn6u3mc8hsq14lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5HHAEWZufgCID9kiTy8MrkR7cvr_fJh4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
